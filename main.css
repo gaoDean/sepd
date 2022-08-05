@@ -19,7 +19,7 @@ small {
 /* Header */
 .hero {
   background-image: url(images/pic1.png);
-  background-position: center;
+  background-position: 50% 20%;
   background-size: cover;
 }
 
