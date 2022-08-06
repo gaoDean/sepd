@@ -4,48 +4,61 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>sepd</title>
-		<meta name="description" content="A classic company or blog layout with a sidebar. Built with Pico CSS.">
+		<title>SEPD Australia</title>
+		<meta name="description" content="Shanghai Electric Power Design Institute">
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#d2b935">
+		<meta name="msapplication-TileColor" content="#da532c">
+		<meta name="theme-color" content="#ffffff">
+
 		<link rel="stylesheet" href="min.css">
 		<link rel="stylesheet" href="main.css">
 	</head>
 
 	<body>
 
+		<nav class="container">
+			<ul>
+				<li><img width="40%" src="images/logo.png"></li>
+			</ul>
+			<ul>
+				<details role="list">
+					<summary aria-haspopup="listbox" role="link" class="contrast">Theme</summary>
+					<ul role="listbox">
+						<li><a href="#" data-theme-switcher="auto">Auto</a></li>
+						<li><a href="#" data-theme-switcher="light">Light</a></li>
+						<li><a href="#" data-theme-switcher="dark">Dark</a></li>
+					</ul>
+				</details>
+			</ul>
+		</nav>
 
-		<!-- Hero -->
-		<div class="hero">
-			<nav class="container-fluid">
-				<img width="200" src="images/logo.png">
-				<ul>
-					<details role="list">
-						<summary aria-haspopup="listbox" role="link" class="contrast" data-theme="light"><strong>Theme</strong></summary>
-						<ul role="listbox">
-							<li><a href="#" data-theme-switcher="auto">Auto</a></li>
-							<li><a href="#" data-theme-switcher="light">Light</a></li>
-							<li><a href="#" data-theme-switcher="dark">Dark</a></li>
-						</ul>
-					</details>
-				</ul>
-			</nav>
-			<header class="container" data-theme="light">
-				<hgroup>
-					<h1>SEPD</h1>
-					<h1>Shanghai Electric Power Design Institute</h1>
-				</hgroup>
-			</header>
-		</div><!-- ./ Hero -->
 
 		<!-- Main -->
 		<main class="container">
-			<p>SEPD (Shanghai Electric Power Design Institute) Australia, is the local operation of SEPD Co. Ltd., which is co-owned by its employees and POWERCHINA (Power Construction Corporation of China).</p>
+			<hgroup>
+				<h1>SEPD</h1>
+				<h3>Shanghai Electric Power Design Institute</h3>
+			</hgroup>
+			<p>SEPD Australia, is the local operation of SEPD Co. Ltd., which is co-owned by its employees and POWERCHINA (Power Construction Corporation of China).</p>
 			<p>As the leading industrial giant with A-grade Engineering Certification in both design and consultation for China power network, SEPD has established a strong presence in shaping the power industry worldwide.	</p>
 			<p>With its full capabilities in design, consultation and EPC project delivery internationally, SEPD is able to provide the most competitive services for the power transmission, distribution and renewable energy market.</p>
 			<hgroup>
 				<h2>Introduction</h2>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/uXS9Js-78zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-				<iframe width="560" height="315" src="https://www.youtube.com/embed/COctrwYeMdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				<div class="embed-container">
+					<iframe src="https://www.youtube.com/embed/uXS9Js-78zY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
 			</hgroup>
+			<hgroup>
+				<div class="embed-container">
+					<iframe src="https://www.youtube.com/embed/COctrwYeMdU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</hgroup>
+
 			<hgroup>
 				<h3>Our Global Operation Team</h3>
 				<ul>
@@ -141,9 +154,8 @@
 						<img src="images/p8.png">
 				</figure>
 			</hgroup>
-		</main><!-- ./ Main -->
+		</main>
 
-		<!-- Subscribe -->
 		<div class="container">
 			<article>
 				<h3>info@sepd.com.au</h3>
@@ -155,11 +167,6 @@
 				</p>
 			</article>
 		</div>
-
-		<!-- Footer -->
-		<footer class="container">
-			<small>Built with <a href="https://picocss.com">Pico</a> • <a href="https://github.com/picocss/examples/tree/master/company/">Source code</a></small>
-		</footer><!-- ./ Footer -->
 
 		<script src="js/minimal-theme-switcher.js"></script>
 
