@@ -95,7 +95,7 @@ iframe {
 }
 
 /* vid full width if screen small */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 1025px) {
   .embed-container {
     max-width: 100%;
   }
