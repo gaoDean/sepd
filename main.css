@@ -49,6 +49,10 @@ summary[role="link"].contrast:is([aria-current],:hover,:active,:focus) {
   }
 }
 
+.container {
+	padding-bottom: 0px;
+}
+
 form.grid {
   grid-row-gap: 0;
 }
