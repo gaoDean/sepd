@@ -88,11 +88,17 @@ iframe {
 
 .embed-container {
 	position: relative;
-	padding-bottom: 50.25%;
+	padding-bottom: 56.25%;
 	height: 0;
 	overflow: hidden;
 	max-width: 80%; /* change this for size */
-	min-width: 290px;
+}
+
+/* vid full width if screen small */
+@media screen and (max-width: 500px) {
+  .embed-container {
+    max-width: 100%;
+  }
 }
 
 .video-container { position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden; }
