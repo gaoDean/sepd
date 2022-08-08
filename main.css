@@ -20,11 +20,6 @@ small {
 }
 
 /* Header */
-.hero {
-	/* background-image: url(images/pic1.png); */
-	/* background-position: 50% 20%; */
-	/* background-size: cover; */
-}
 
 header {
 	padding: var(--spacing-company) 0;
