@@ -12,6 +12,7 @@ h2,
 h3,
 hgroup > :last-child {
 	font-weight: 200;
+	margin-bottom: 10px;
 }
 
 small {
@@ -77,9 +78,10 @@ img, logo {
 	min-width: 200px;
 }
 
-summary {
-	padding: 9px !important;
-	padding-top: 25px !important;
+.privacy {
+	display: block;
+	text-align: center;
+	padding-bottom: 100px;
 }
 
 iframe {
