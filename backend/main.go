@@ -122,7 +122,7 @@ func main() {
 		client: resend.NewClient(apiKey),
 	}
 
-	mux.HandleFunc("POST /api/contact", rclient.contactHandler)
+	mux.HandleFunc("/api/contact", rclient.contactHandler)
 
 	log.Println("Server running on :8080")
 	if err := http.ListenAndServe(":8080", mux); err != nil {
