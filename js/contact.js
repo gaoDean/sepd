@@ -34,10 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const payload = { name, email, message };
 
-    // Resolve API endpoint: use localhost:8080 if running in local dev/testing
-    const isLocalDev = window.location.protocol === 'file:' || 
-                       ((window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') && window.location.port !== '8080');
-    const apiEndpoint = isLocalDev ? 'http://localhost:8080/api/contact' : '/api/contact';
+    // Resolve API endpoint: since the Go backend runs on port 8080 on the server,
+    // we direct the requests to port 8080 of the active hostname.
+    const protocol = window.location.protocol === 'https:' ? 'https:' : 'http:';
+    const hostname = window.location.hostname || '127.0.0.1';
+    const apiEndpoint = `${protocol}//${hostname}:8080/api/contact`;
 
     try {
       const response = await fetch(apiEndpoint, {
